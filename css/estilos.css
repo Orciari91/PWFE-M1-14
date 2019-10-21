@@ -34,17 +34,78 @@ p{
 }
 a{
 	text-decoration: none;
-	color: white;
-	background-color: orange;
-	padding: 0px 2px;
-	border-radius: 2px;
+	font-family: Arial;
 }
 
-a:hover{
-	color: orange;
-	background-color: transparent;
-	text-decoration: none;
+#mc{
+	color: white;
+	background-color: red;	
 }
+
+#mc:hover{
+	color: red;
+	background-color: white;	
+}
+#antman{
+	color: grey;
+	background-color: red;
+}
+
+#antman:hover{
+	color: red;
+	background-color: grey;
+}
+
+#ironman{
+	color: gold;
+	background-color: red;
+}
+
+#ironman:hover{
+	color: red;
+	background-color: gold;
+}
+
+#hulk{
+	color: green;
+	background-color: purple;
+}
+
+#hulk:hover{
+	color: purple;
+	background-color: green;
+}
+
+#capitanAmerica{
+	color: blue;
+	background-color: red;
+}
+
+#capitanAmerica:hover{
+	color: red;
+	background-color: blue;
+}
+
+#thor{
+	color: red;
+	background-color: black;	
+}
+
+#thor:hover{
+	color: black;
+	background-color: red;	
+}
+
+.avispa{
+	color: black;
+	background-color: yellow;	
+}
+
+.avispa:hover{
+	color: yellow;
+	background-color: black;	
+}
+
 .portada{
 	text-align: center;
 	position: relative;
@@ -57,10 +118,12 @@ a:hover{
 audio{
 	margin: 30px;
 }
+
 .fondo{
 	display: inline-block;
 	background: rgba(19,19,19,1);
 }
+
 .col1{
 	display: inline-block;
 	width: 79%;
