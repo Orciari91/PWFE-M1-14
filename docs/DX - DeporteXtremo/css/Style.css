@@ -26,7 +26,7 @@ header a, header h1{
 
 header h1{
 	margin: 0;
-	font-family: 2rem;
+	font-family: 2.4rem;
 }
 
 a{
@@ -39,11 +39,15 @@ nav{
 	margin: 0;
 }
 
-nav ul li{
+ul li{
 	display: inline-block;
 	width: 60px;
 	text-align: center;
 	margin: 0;
+}
+
+ul{
+	list-style: none;
 }
 
 img{
