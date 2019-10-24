@@ -15,41 +15,38 @@ body{
 
 header{
 	background-color: #333;
-	padding: 2px 20px;
-	vertical-align: middle;
+	overflow: auto;
+	padding: 1.5rem;
 }
 
 header a, header h1{
 	color: #d9d9d9;
-	display: inline-block;
 }
 
 header h1{
-	margin: 0;
-	font-family: 2.4rem;
+	font-size: 2.4rem;
+	float: left;
+	font-weight: bold;
+	padding: .5rem;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 8rem;
 }
 
 a{
 	text-decoration: none;
 }
 nav{
-	display: inline-block;
-	padding: 5px;
-	height: 29px;
-	margin: 0;
+	float: right;
 }
-
-ul li{
+nav li{
 	display: inline-block;
-	width: 60px;
 	text-align: center;
-	margin: 0;
+	margin: .5rem;
 }
 
-ul{
-	list-style: none;
-}
-
-img{
-	height: 29px;
+nav li a{
+	display: block;
+	padding: .5rem;
 }
