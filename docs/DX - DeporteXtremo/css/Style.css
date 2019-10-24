@@ -39,6 +39,7 @@ a{
 }
 nav{
 	float: right;
+	font-size: 1.5rem;
 }
 nav li{
 	display: inline-block;
@@ -49,4 +50,11 @@ nav li{
 nav li a{
 	display: block;
 	padding: .5rem;
+}
+
+figcaption{
+	background-color: #333;
+	color: white;
+	font-size: 5rem;
+	padding: 3rem;
 }
