@@ -11,6 +11,7 @@ body{
 	font-family: Arial, sans-serif;
 	color: #333;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 header{
@@ -52,9 +53,39 @@ nav li a{
 	padding: .5rem;
 }
 
-figcaption{
+img{
+	display: block;
+	width: 100%;
+}
+#noticias-destacadas{
+	width: 300vw;
+	overflow: auto;
+	position: relative;
+	animation: 15s slider infinite;
+}
+
+#noticias-destacadas figure{
+	float: left;
+	width: 100vw;
+}
+
+#noticias-destacadas h2{
 	background-color: #333;
 	color: white;
-	font-size: 5rem;
-	padding: 3rem;
+	font-size: 3.2rem;
+	font-weight: bold;
+	padding: 2rem;
+}
+
+@keyframes slider {
+	/*INICIO ANIMACION*/
+
+	0% { left: 0 }
+	20% { left: 0 }
+	40% { left: -100vw }
+	60% { left: -100vw }
+	80% { left: -200vw }
+	100% { left: -200vw }
+
+	/*FIN DE ANIMACION*/
 }
