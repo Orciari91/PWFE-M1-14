@@ -111,6 +111,37 @@ img{
 	color: black;
 }
 
+#tabla-resultados{
+	padding: 1rem;
+	font-size: 2rem;
+}
+
+#tabla-resultados th{
+	background-color: red;
+}
+
+#tabla-resultados th,
+#tabla-resultados td{
+	padding: 2rem;
+	font-size: 2rem;
+	vertical-align: middle;
+}
+
+#tabla-resultados td:nth-of-type(odd){
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#tabla-resultados td:nth-of-type(even) span{
+	color: blue;
+}
+
+#tabla-resultados table{
+	margin: auto;
+	width: 50%;
+}
+
 @keyframes slider {
 	/*INICIO ANIMACION*/
 
