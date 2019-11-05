@@ -2,14 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<title>DX - DeporteXtremo</title>
-	<link rel="stylesheet" href="css/reset.css">
+	<!--<link rel="stylesheet" href="css/reset.css">-->
 	<link rel="stylesheet" href="css/Style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 	<header class="opcionMenu">
-		<h1>DeporteXtremo</h1>
-		<nav>
+		<h1 id="logo">DeporteXtremo</h1>
+		<button id="hamburguesa">&#9776;</button>
+		<nav id="menu">
 			<ul>
 				<li>
 					<a href="#" >Fútbol</a>
@@ -57,14 +60,14 @@
 				</figcaption>
 			</figure>
 		</section>
-		<section id="ultimas-noticias">
+		<section id="ultimas-noticias" class="container-fluid">
 			<!-- INICIO NOTICIA -->
-			<article class="noticia">
-				<div class="noticia-img">
+			<article class="row">
+				<div class="col-12 col-md-4">
 					<!-- ACA VA LA IMAGEN 1-->
 					<img src="img/sorteo-libertadores.jpg">
 				</div>
-				<div class="noticia-txt">
+				<div class="col-12 col-md-8">
 					<h3>La tecnología llega a la actual edición de la Libertadores</h3>
 					<p>por <a href="#">Joaquín Angeli</a></p>
 					<p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
@@ -115,28 +118,28 @@
 					<td>1</td>
 					<td><span>Tigre</span>, 1 pts<br><span>Patronato</span>, 3pts</td>
 					<td>2</td>
-					<td>Colon, 4pts<br>Estudiantes, 3pts</td>
+					<td><span>Colon</span>, 4pts<br><span>Estudiantes</span>, 3pts</td>
 				</tr>
 				<tr>	
 					<!--FILA 2 -->
 					<td>3</td>
 					<td><span>Def. y Justicia</span>, 4pts<br><span>Únion</span>, 4pts</td>
 					<td>4</td>	
-					<td>Argentinos Juniors, 0pts<br>Belgrano, 3pts</td>
+					<td><span>Argentinos Juniors</span>, 0pts<br><span>Belgrano</span>, 3pts</td>
 				</tr>
 				<tr>
 					<!--FILA 3 -->
 					<td>5</td>
-					<td>Newell's, 1pts<br>Olimpo, 1pts</td>
+					<td><span>Newell's</span>, 1pts<br><span>Olimpo</span>, 1pts</td>
 					<td>6</td>
-					<td>Colon, 4pts<br>Estudiantes, 3pts</td>
+					<td><span>San lorenzo</span>, 4pts<br><span>Arsenal</span>, 3pts</td>
 				</tr>
 				<tr>
 					<!--FILA 4 -->
 					<td>7</td>
-					<td>Independiente, 4pts<br>Lanús, 0pts</td>
+					<td><span>Independiente</span>, 4pts<br><span>Lanús</span>, 0pts</td>
 					<td>8</td>
-					<td>Talleres, 3pts<br>Vélez, 3pts</td>
+					<td><span>Talleres</span>, 3pts<br><span>Vélez</span>, 3pts</td>
 				</tr>
 			</table>
 		</section>

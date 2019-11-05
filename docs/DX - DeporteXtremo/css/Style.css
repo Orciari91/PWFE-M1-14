@@ -116,6 +116,10 @@ img{
 	font-size: 2rem;
 }
 
+table{
+	background-color: #d9d9d9;
+}
+
 #tabla-resultados th{
 	background-color: red;
 }
@@ -153,4 +157,43 @@ img{
 	100% { left: -200vw }
 
 	/*FIN DE ANIMACION*/
+}
+
+#hamburguesa{
+	display: none;
+}
+
+@media screen and (max-width: 480px)
+{
+	#menu
+	{
+		display: none;
+	}
+	#logo
+	{
+		font-size: 2rem;
+		padding-left: 7rem;
+	}
+	#hamburguesa
+	{
+		display: block;
+		float: right;
+		color: #d9d9d9;
+		font-size: 2rem;
+		background-color: transparent;
+		border: none;
+	}
+	.noticia
+	{
+		flex-direction: column;
+	}
+	.noticia-img, .noticia-txt
+	{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px)
+{
+/*pantalla grande  4-8 pantalla mediana 3-9*/
 }
