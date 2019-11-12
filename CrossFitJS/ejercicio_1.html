@@ -41,7 +41,39 @@
 		</aside>
 
 		<script>
-		
+			//Tipos de datos "primitivos"
+			var nombre = prompt("Ingrese Nombre:") // String
+			var stock = prompt("Ingrese Stock:")	//int
+			var precio = prompt("Ingrese Precio:") //float
+			var disponible = confirm("Esta disponible para la venta?") //bool
+
+			//Dato de origen "indeterminado"
+
+			//...determinable luego de una operacion logico-matematica
+
+			var precioFinal = precio * 1.21
+
+			//determinable luego de una operacion del usuario
+
+			if (nombre == "" || nombre == null || nombre == undefined) 
+			{
+				alert("No ingreso datos")
+			}			
+
+			if( isNaN(stock) || stock < 0 )
+			{
+				alert("ERROR! Ingrese un stock valido")
+			}
+			if(isNaN(precio) || precio <= 0 || precio > 1000)
+			{
+				alert("ERROR! Ingrese un precio entre 1 y 1000")	
+			}
+			if(disponible == undefined)
+			{
+				alert("ERROR! Indique si esta disponible")
+			}
+			//console.log("Hay " + stock + " unid. de " + nombre + " que valen " + precio)
+			document.querySelector("article").innerText = "Hay " + stock + " unid. de " + nombre + " que valen " + precio
 		</script>
 	</body>
 </html>
