@@ -32,16 +32,27 @@
 			/* 1) Seleccionar el h1 y guardarlo en una variable */
 			var titulo = document.querySelector("h1")
 			/* 2) Modificar el texto interno de esta variable */
-			//titulo.innerText = "HOla"
+			titulo.innerText = "HOla"
 			/* 3) Una vez que funcione, probar poniendo el <script> en el <head> para corroborar que JavaScript se ejecuta secuencialmente! */
 
 			// EXTRA: Explicacion de Manipulaciones
 
-			/* 1) Manipulacion de Contenido */
-			titulo.innerHTML = "Estoy <em>manipulando</em> el contenido del h1"
-			/* 2) Manipulacion de Estructura */
-			titulo.style.color = "red"
 			/* 3) Manipulacion de Comportamiento */
+			titulo.onclick = modificarTitulo 
+			//titulo.addEventListener("click", modificarTitulo)
+			//titulo.removeEventListener("click", modificarTitulo)
+			function modificarTitulo()
+			{
+				// Inicio modificarTitulo 
+
+				/* 1) Manipulacion de Contenido */
+				titulo.innerHTML = "Estoy <em>manipulando</em> el contenido del h1"
+				/* 2) Manipulacion de Estructura */
+				titulo.style.color = "red"
+				titulo.classList.add("alerta")
+				titulo.classList.remove("alerta")
+				// Fin de modificarTitulo 
+			}
 		</script>
 	</body>
 </html>
