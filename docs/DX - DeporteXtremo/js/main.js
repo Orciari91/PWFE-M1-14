@@ -16,10 +16,11 @@ noticia4 = {
 	detalle : "El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico Internacional (COI) que se realizó en Lima. La ceremonia inaugural se realizará al aire libre.",
 	imagen : "buenos-aires.jpg"
 }
-
+/*
 crearNoticia(titulo, autor, detalle, imagen)
 crearNoticia(noticia3[0], noticia3[1], noticia3[2], noticia3[3])
 crearNoticia(noticia4.titulo, noticia4.autor, noticia4.detalle, noticia4.imagen)
+*/
 
 function crearNoticia(t, a, d, i){
 
